@@ -4,6 +4,9 @@
     <!-- add remote -->
     <remote name="rpidroid" fetch="https://github.com/rpidroid/" />
 
+    <!-- remove unnecessary existing projects-->
+    <remove-project name="platform/external/mesa3d"/>
+
     <!-- add repos -->
     <project path="device/rpidroid/rpi4/" name="rpi4-aosp-device" remote="rpidroid" revision="android11" />
     <project path="device/rpidroid/rpi4-kernel/" name="rpi4-aosp-kernel" remote="rpidroid" revision="linux-5.4" />
@@ -11,6 +14,7 @@
     <project path="vendor/rpidroid/rpi4/memtrack/" name="rpi4-aosp-memtrack" remote="rpidroid" revision="android11" />
     <project path="vendor/rpidroid/rpi4/gralloc/" name="rpi4-aosp-gralloc" remote="rpidroid" revision="android11" />
 
+    <project path="external/mesa3d" name="external_mesa3d" revision="v3d-20.3" remote="rpidroid"/>
     <project path="external/drm_gralloc/" name="rpi4-aosp-drm_gralloc" remote="rpidroid" revision="android11" />
 
 </manifest>
